@@ -1,0 +1,32 @@
+<html>
+    <form action="" method="post">
+        <fieldset>
+            <legend><h5>Envie Uma Mensagem</h5></legend>
+                <label for="">
+                    Nome:
+                    <input type="text" placeholder="Nome">
+                </label>
+
+                <label for="">
+                    Email:
+                    <input type="email" placeholder="E-Mail" autocomplete="email" required>
+                </label>
+
+                <label for="">
+                    Tipo:
+                    <input type="text" 
+                    list="tipo"
+                    placeholder="Escolha o tipo">
+
+                    <datalist id="tipo">
+                        <option>Aluguel</option>
+                        <option>Compra</option>
+                        <option>Temporada</option>
+                    </datalist>
+                </label>
+
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</html>

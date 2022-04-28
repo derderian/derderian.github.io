@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+ 
+    font-size: 18px;
+    font-family: cursive;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+/*--------header--------*/
+header {
+    grid-area: header;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(#25157e, #2e2edfb9, #25157e);
+    width: 100%;
+    opacity: 0.95;
+}
+
+header .logo{
+    display: flex;
+    padding: 0.7em;
+}
+
+header h1 {
+    color: #ff8800;
+    font-size: 2em;
+    margin: 0x;
+    padding-left: 0.6em;
+}
+header a{
+    text-decoration: none;
+}
+
+header .menu{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    padding: 1em;
+}
+/*--------header--------*/
+
+
+/*--------body--------*/
+main{
+    grid-area: main;
+    justify-content: center;
+    height: 800px;
+
+   /** background-image: url(./pordosol.jpg); **/
+    background-color: #6ec1e46c;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.principal{
+    text-align: center;
+}
+
+
+
+/*--------body--------*/
+
+
+/*--------footer--------*/
+footer{
+    grid-area: footer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(#25157e, #2e2edfb9, #25157e);
+    opacity: 0.9;
+}
+
+h2{
+    color: #b66203;
+    font-size: 1em;
+    margin: 0x;
+    padding-left: 2em;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+/*--------footer--------*/
